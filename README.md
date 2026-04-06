@@ -1,23 +1,57 @@
-# Company Landing Page
+# 🚀 Bomfrio - Landing Page
 
-This is Simple Product or Company Landing Website Made Using <br/>
-[ReactJS](https://reactjs.org/), [Bootstrap](https://getbootstrap.com/) and also used [Sweetalert](https://sweetalert.js.org/) Library for Nice Alert Dialogs.
+Landing page desenvolvida para a empresa **Bomfrio**, focada na apresentação de serviços de manutenção em refrigeração e contato rápido via WhatsApp.
 
-## UI
+---
 
-### HomePage
-<hr />
-<img src="https://user-images.githubusercontent.com/54361799/117673191-31157f00-b1c8-11eb-954e-dde3999bf295.png" />
+## 📌 Sobre o projeto
 
-### ServicesPage
-<hr />
-<img src="https://user-images.githubusercontent.com/54361799/117673300-4db1b700-b1c8-11eb-85c6-63ead81843d4.png" />
+Este projeto foi desenvolvido com o objetivo de criar um site simples, moderno e funcional para uma empresa de manutenção, permitindo que clientes conheçam os serviços e entrem em contato de forma rápida.
 
-### AboutPage
-<hr />
-<img src="https://user-images.githubusercontent.com/54361799/117673479-75a11a80-b1c8-11eb-95d6-b17000d7d4c8.png" />
+---
 
+## 🛠️ Tecnologias utilizadas
 
-### ContactUsPage
-<hr />
-<img src="https://user-images.githubusercontent.com/54361799/117673607-8f426200-b1c8-11eb-8e26-741a57aa01fb.png" />
+- React
+- JavaScript
+- HTML5
+- CSS3 / Bootstrap
+
+---
+
+## 📱 Funcionalidades
+
+- Página inicial com apresentação da empresa
+- Seção de serviços (ar-condicionado, geladeira, máquina de lavar, etc.)
+- Página "Sobre" com descrição da empresa
+- Botões de contato direto via WhatsApp
+- Layout responsivo (funciona em celular e computador)
+
+---
+
+## 💬 Contato
+
+Os botões do site redirecionam diretamente para o WhatsApp com mensagem automática para facilitar o atendimento.
+
+---
+
+## 📸 Preview
+
+_(adicione aqui um print do seu site depois)_
+
+---
+
+## 🚀 Como rodar o projeto
+
+```bash
+npm install
+npm start
+```
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para fins de estudo e uso real em empresa.
+
+---
