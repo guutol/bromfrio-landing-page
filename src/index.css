@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital@1&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 .navbar {
+  position: relative;
+  z-index: 1000;
   background-color: #fff !important;
 }
 
@@ -83,15 +85,21 @@
   color: #fff;
 }
 
-.header-img {
-  text-align: right;
+.header-image {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.header-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 /* already animated svg available */
 #header .animated {
   animation: up-down 2.5s ease-in-out infinite alternate-reverse both;
 }
-
 
 @-webkit-keyframes up-down {
   0% {
@@ -105,12 +113,8 @@
 @keyframes up-down {
   0% {
     transform: translateX(10px);
-  } 
+  }
   100% {
     transform: translateY(-10px);
   }
-}
-
-#coverImg {
-  object-fit: cover;
 }

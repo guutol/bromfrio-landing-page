@@ -4,7 +4,6 @@ import swal from "sweetalert";
 const Contact = () => {
   const [data, setData] = useState({
     fullname: "",
-    email: "",
     msg: "",
   });
 
@@ -20,9 +19,16 @@ const Contact = () => {
 
   const formSubmitHandle = (e) => {
     e.preventDefault();
-    // message can be saved to db or email can be sent from here!
 
-    swal("Sent!", "Message Sent Successfully!", "success");
+    const numero = "5518996696588"; // seu número
+
+    const texto = `Olá, me chamo ${data.fullname}\nProblema: ${data.msg}`;
+
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, "_blank");
+
+    swal("Redirecionando!", "Você será enviado para o WhatsApp.", "success");
   };
 
   return (
@@ -53,18 +59,7 @@ const Contact = () => {
                 <label
                   htmlFor="exampleFormControlInput1"
                   className="form-label"
-                >
-                  E-mail
-                </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="exampleFormControlInput1"
-                  name="email"
-                  value={data.email}
-                  onChange={inputEvent}
-                  placeholder="name@example.com"
-                />
+                ></label>
               </div>
               <div className="mb-3">
                 <label

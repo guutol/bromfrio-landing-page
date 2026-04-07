@@ -10,7 +10,7 @@ const About = () => {
                 imgsrc={about} 
                 visit='/contact' 
                 btnname="Contate agora"
-                text= "Mais de 20 anos de experiência em manutenção de refrigeração, oferecendo serviços com qualidade, agilidade e confiança."
+                text= "Mais de 20 anos de experiência em manutenção de refrigeração, oferecendo serviços com qualidade, agilidade e confiança"
             />
         </>
     )
