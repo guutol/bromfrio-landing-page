@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 const Card = ({ imgsrc, title, text, link }) => {
   return (
