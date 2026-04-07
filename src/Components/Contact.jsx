@@ -20,10 +20,8 @@ const Contact = () => {
   const formSubmitHandle = (e) => {
     e.preventDefault();
 
-    const numero = "5518996696588"; // seu número
-
+    const numero = "5518997011035";
     const texto = `Olá, me chamo ${data.fullname}\nProblema: ${data.msg}`;
-
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
     window.open(url, "_blank");
