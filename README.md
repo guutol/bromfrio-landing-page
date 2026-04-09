@@ -35,12 +35,6 @@ Os botões do site redirecionam diretamente para o WhatsApp com mensagem automá
 
 ---
 
-## 📸 Preview
-
-_(adicione aqui um print do seu site depois)_
-
----
-
 ## 🚀 Como rodar o projeto
 
 ```bash
