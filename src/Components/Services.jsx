@@ -1,32 +1,56 @@
 import React from "react";
 import Card from "./Card";
 import ServiceData from "./ServiceData";
+import FinalCTA from "./FinalCTA";
 
 const Services = () => {
   return (
     <>
-      <div className="my-5">
-        <h1 className="text-center">Nossos Serviços</h1>
-      </div>
-      <div className="container-fluid mb-5">
-        <div className="row">
-          <div className="col-10 mx-auto">
-            <div className="row gy-4">
-              {ServiceData.map((val, index) => {
-                return (
-                  <Card
-                    imgsrc={val.imgsrc}
-                    title={val.title}
-                    text={val.text}
-                    link={val.link}
-                    key={index}
-                  />
-                );
-              })}
+      <section className="services-intro">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-10 mx-auto text-center">
+              <h1 className="services-title">
+                Assistência técnica em refrigeração
+              </h1>
+              <p className="services-subtitle">
+                Atendemos equipamentos residenciais e comerciais com
+                diagnóstico técnico, agilidade e garantia no serviço.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {ServiceData.map((group, index) => (
+        <section
+          className={`services-category ${
+            index % 2 === 1 ? "services-category-alt" : ""
+          }`}
+          key={index}
+        >
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-10 mx-auto">
+                <h2 className="services-category-title">{group.category}</h2>
+                <div className="row gy-4 mt-3">
+                  {group.services.map((val, i) => (
+                    <Card
+                      imgsrc={val.imgsrc}
+                      title={val.title}
+                      text={val.text}
+                      link={val.link}
+                      key={i}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ))}
+
+      <FinalCTA />
     </>
   );
 };

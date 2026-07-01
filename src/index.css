@@ -410,3 +410,52 @@
     font-size: 26px;
   }
 }
+
+/* ===============================
+    # Serviços - página
+==================================*/
+.services-intro {
+  padding: 60px 0 30px;
+  background-color: #fff;
+}
+
+.services-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.services-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.services-category {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.services-category-alt {
+  background-color: var(--color-bg-alt);
+}
+
+.services-category-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 991px) {
+  .services-title {
+    font-size: 28px;
+  }
+
+  .services-category-title {
+    font-size: 22px;
+  }
+}
