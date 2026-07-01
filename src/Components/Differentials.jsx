@@ -7,9 +7,9 @@ const differentials = [
     text: "Técnicos experientes em refrigeração residencial e comercial.",
   },
   {
-    icon: "🔍",
-    title: "Diagnóstico técnico",
-    text: "Identificação precisa do problema antes de qualquer serviço.",
+    icon: "⚡",
+    title: "Conserto na hora, na sua casa",
+    text: "Fazemos o diagnóstico e já consertamos o equipamento na hora, direto na sua casa ou comércio.",
   },
   {
     icon: "💰",
