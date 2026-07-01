@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -116,5 +116,297 @@
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+
+/* ===============================
+    # Home - novo layout (Bomfrio)
+==================================*/
+:root {
+  --color-primary: #0f4c81;
+  --color-secondary: #dceff7;
+  --color-accent: #ff7a00;
+  --color-whatsapp: #25d366;
+  --color-text: #1c2b36;
+  --color-text-secondary: #5a6b78;
+  --color-bg-alt: #f4f8fb;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+/* Hero */
+.hero-section {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.hero-title strong {
+  color: var(--color-primary);
+}
+
+.hero-subtitle {
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  margin-bottom: 28px;
+  max-width: 520px;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero-image-wrap {
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 420px;
+}
+
+.btn-cta-primary {
+  display: inline-block;
+  background-color: var(--color-whatsapp);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid var(--color-whatsapp);
+  transition: 0.3s;
+}
+
+.btn-cta-primary:hover {
+  background-color: #1da851;
+  border-color: #1da851;
+  color: #fff;
+}
+
+.btn-cta-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid var(--color-primary);
+  transition: 0.3s;
+}
+
+.btn-cta-secondary:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* Trust bar */
+.trust-bar {
+  background-color: var(--color-primary);
+  padding: 28px 0;
+}
+
+.trust-value {
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.trust-label {
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Differentials */
+.differentials-section {
+  padding: 70px 0;
+  background-color: #fff;
+}
+
+.differential-card {
+  background-color: var(--color-bg-alt);
+  border-radius: 12px;
+  padding: 28px 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.differential-icon {
+  font-size: 32px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.differential-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.differential-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+/* Home services */
+.home-services-section {
+  padding: 70px 0;
+  background-color: var(--color-bg-alt);
+}
+
+/* Residential / commercial */
+.res-com-section {
+  padding: 70px 0;
+  background-color: #fff;
+}
+
+.res-com-card {
+  height: 100%;
+  border-radius: 12px;
+  padding: 36px 30px;
+  color: #fff;
+}
+
+.res-com-card h3 {
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.res-com-card p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.res-card {
+  background-color: var(--color-primary);
+}
+
+.com-card {
+  background-color: #163a56;
+}
+
+/* Brands strip */
+.brands-strip {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.brands-title {
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+}
+
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.brand-badge {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text);
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+/* Testimonials */
+.testimonials-section {
+  padding: 70px 0;
+  background-color: var(--color-bg-alt);
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  height: 100%;
+  box-shadow: 0 4px 16px rgba(28, 43, 54, 0.06);
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.testimonial-author {
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0;
+}
+
+.testimonial-location {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+/* Final CTA */
+.final-cta-section {
+  padding: 70px 0;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-align: center;
+}
+
+.final-cta-section h2 {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.final-cta-section p {
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 28px;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 17px;
+  }
+
+  .section-title {
+    font-size: 26px;
   }
 }

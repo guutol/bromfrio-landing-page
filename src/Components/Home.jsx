@@ -1,18 +1,24 @@
 import React from "react";
-import home from "../images/home.png";
-import Common from "./Common";
+import Hero from "./Hero";
+import TrustBar from "./TrustBar";
+import Differentials from "./Differentials";
+import HomeServices from "./HomeServices";
+import ResidentialCommercial from "./ResidentialCommercial";
+import BrandsStrip from "./BrandsStrip";
+import Testimonials from "./Testimonials";
+import FinalCTA from "./FinalCTA";
 
 const Home = () => {
   return (
     <>
-      <Common
-        name="Conserto e manutenção com"
-        imgsrc={home}
-        isCompName={true}
-        compName="Bomfrio"
-        visit="/services"
-        btnname="Ver serviços"
-      />
+      <Hero />
+      <TrustBar />
+      <Differentials />
+      <HomeServices />
+      <ResidentialCommercial />
+      <BrandsStrip />
+      <Testimonials />
+      <FinalCTA />
     </>
   );
 };
