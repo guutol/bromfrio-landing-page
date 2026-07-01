@@ -5,17 +5,17 @@ import React from "react";
 const testimonials = [
   {
     name: "Marcos S.",
-    location: "Bairro Centro",
-    text: "Consertaram minha geladeira frost free no mesmo dia. Atendimento rápido e explicaram tudo antes de cobrar.",
+    location: "Condomínio Damha I, Presidente Prudente",
+    text: "Fizeram o orçamento e, assim que aprovei, consertaram minha frost free na hora, na minha casa. Atendimento rápido e sem complicação.",
   },
   {
     name: "Juliana R.",
-    location: "Bairro Jardim das Flores",
-    text: "Levei minha lava e seca com receio, mas o orçamento foi justo e o serviço teve garantia. Recomendo.",
+    location: "Bairro Ana Jacinta",
+    text: "Consertaram minha lava e seca. O orçamento foi justo e o serviço teve garantia. Recomendo.",
   },
   {
-    name: "Comércio Bom Preço",
-    location: "Cliente comercial",
+    name: "Cliente comercial",
+    location: "Mercado local",
     text: "Fazemos manutenção da câmara fria do nosso mercado com a Bomfrio há anos. Sempre pontuais e profissionais.",
   },
 ];
