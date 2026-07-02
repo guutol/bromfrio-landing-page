@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import about from "../images/about.png";
 import ResidentialCommercial from "./ResidentialCommercial";
 import FinalCTA from "./FinalCTA";
+import usePageTitle from "../hooks/usePageTitle";
 
 const specialties = [
   { icon: "🧊", title: "Geladeiras duplex e frost free" },
@@ -36,6 +37,8 @@ const values = [
 ];
 
 const About = () => {
+  usePageTitle("Sobre a Bomfrio | Refrigeração com mais de 20 anos");
+
   return (
     <>
       <section className="about-hero-section">

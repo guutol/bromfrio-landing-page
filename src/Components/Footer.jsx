@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { WHATSAPP_NUMBER, buildWhatsAppLink } from "../constants/whatsapp";
 
-const whatsappNumber = "5518997011035";
 const phoneDisplay = "(18) 99701-1035";
 
 const Footer = () => {
@@ -54,11 +54,11 @@ const Footer = () => {
                 <h4 className="footer-title">Contato</h4>
                 <ul className="footer-links">
                   <li>
-                    <a href={`tel:+${whatsappNumber}`}>{phoneDisplay}</a>
+                    <a href={`tel:+${WHATSAPP_NUMBER}`}>{phoneDisplay}</a>
                   </li>
                   <li>
                     <a
-                      href={`https://wa.me/${whatsappNumber}?text=Olá, gostaria de solicitar um orçamento.`}
+                      href={buildWhatsAppLink()}
                       target="_blank"
                       rel="noreferrer"
                     >

@@ -1,4 +1,5 @@
 import React from "react";
+import { buildWhatsAppLink } from "../constants/whatsapp";
 
 const FinalCTA = () => {
   return (
@@ -11,7 +12,7 @@ const FinalCTA = () => {
               Fale com a gente no WhatsApp e receba seu orçamento.
             </p>
             <a
-              href="https://wa.me/5518997011035?text=Olá, gostaria de solicitar um orçamento."
+              href={buildWhatsAppLink()}
               className="btn-cta-primary"
               target="_blank"
               rel="noreferrer"

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import home from "../images/home.png";
+import { buildWhatsAppLink } from "../constants/whatsapp";
 
 const Hero = () => {
   return (
@@ -24,7 +25,7 @@ const Hero = () => {
                 </p>
                 <div className="hero-cta-group">
                   <a
-                    href="https://wa.me/5518997011035?text=Olá, gostaria de solicitar um orçamento."
+                    href={buildWhatsAppLink()}
                     className="btn-cta-primary"
                     target="_blank"
                     rel="noreferrer"

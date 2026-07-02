@@ -7,8 +7,11 @@ import ResidentialCommercial from "./ResidentialCommercial";
 import BrandsStrip from "./BrandsStrip";
 import Testimonials from "./Testimonials";
 import FinalCTA from "./FinalCTA";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Home = () => {
+  usePageTitle("Bomfrio | Assistência Técnica em Refrigeração");
+
   return (
     <>
       <Hero />

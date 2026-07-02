@@ -2,8 +2,11 @@ import React from "react";
 import Card from "./Card";
 import ServiceData from "./ServiceData";
 import FinalCTA from "./FinalCTA";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Services = () => {
+  usePageTitle("Serviços | Bomfrio Refrigeração");
+
   return (
     <>
       <section className="services-intro">

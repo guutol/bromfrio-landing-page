@@ -1,11 +1,10 @@
 import React from "react";
-
-const whatsappNumber = "5518997011035";
+import { buildWhatsAppLink } from "../constants/whatsapp";
 
 const WhatsAppFloat = () => {
   return (
     <a
-      href={`https://wa.me/${whatsappNumber}?text=Olá, gostaria de solicitar um orçamento.`}
+      href={buildWhatsAppLink()}
       className="whatsapp-float"
       target="_blank"
       rel="noreferrer"

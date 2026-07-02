@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import swal from "sweetalert";
-
-const whatsappNumber = "5518997011035";
+import { buildWhatsAppLink } from "../constants/whatsapp";
+import usePageTitle from "../hooks/usePageTitle";
 
 const quickInfo = [
   { icon: "🏠", title: "Atendimento residencial" },
@@ -47,6 +47,8 @@ const initialData = {
 };
 
 const Contact = () => {
+  usePageTitle("Contato | Bomfrio Refrigeração");
+
   const [data, setData] = useState(initialData);
   const [errors, setErrors] = useState({});
 
@@ -86,9 +88,7 @@ const Contact = () => {
     const texto = `Olá, gostaria de solicitar um orçamento.\n\n${linhas.join(
       "\n"
     )}`;
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      texto
-    )}`;
+    const url = buildWhatsAppLink(texto);
 
     window.open(url, "_blank");
 
@@ -117,7 +117,7 @@ const Contact = () => {
                 residencial e comercial, do diagnóstico ao conserto.
               </p>
               <a
-                href={`https://wa.me/${whatsappNumber}?text=Olá, gostaria de solicitar um orçamento.`}
+                href={buildWhatsAppLink()}
                 className="btn-cta-primary"
                 target="_blank"
                 rel="noreferrer"
@@ -310,7 +310,7 @@ const Contact = () => {
                 especializado.
               </p>
               <a
-                href={`https://wa.me/${whatsappNumber}?text=Olá, gostaria de solicitar um orçamento.`}
+                href={buildWhatsAppLink()}
                 className="btn-cta-primary"
                 target="_blank"
                 rel="noreferrer"

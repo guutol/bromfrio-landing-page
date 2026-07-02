@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const navLinks = [
   { to: "/", label: "Início", exact: true },
@@ -7,8 +7,12 @@ const navLinks = [
   { to: "/about", label: "Sobre", exact: true },
 ];
 
+const isLinkActive = (pathname, to, exact) =>
+  exact ? pathname === to : pathname.startsWith(to);
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { pathname } = useLocation();
 
   return (
     <>
@@ -51,7 +55,11 @@ const Navbar = () => {
                           activeClassName="menu_active"
                           exact={link.exact}
                           className="nav-link"
-                          aria-current="page"
+                          aria-current={
+                            isLinkActive(pathname, link.to, link.exact)
+                              ? "page"
+                              : undefined
+                          }
                           to={link.to}
                           onClick={() => setMenuOpen(false)}
                         >
@@ -64,6 +72,11 @@ const Navbar = () => {
                         activeClassName="nav-cta-btn-active"
                         exact
                         className="nav-cta-btn"
+                        aria-current={
+                          isLinkActive(pathname, "/contact", true)
+                            ? "page"
+                            : undefined
+                        }
                         to="/contact"
                         onClick={() => setMenuOpen(false)}
                       >
