@@ -130,7 +130,7 @@
   --color-primary: #0f4c81;
   --color-secondary: #dceff7;
   --color-accent: #ff7a00;
-  --color-whatsapp: #25d366;
+  --color-whatsapp: #1a7a3d;
   --color-text: #1c2b36;
   --color-text-secondary: #5a6b78;
   --color-bg-alt: #f4f8fb;
@@ -212,8 +212,8 @@
 }
 
 .btn-cta-primary:hover {
-  background-color: #1da851;
-  border-color: #1da851;
+  background-color: #156633;
+  border-color: #156633;
   color: #fff;
 }
 
