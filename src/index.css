@@ -459,3 +459,124 @@
     font-size: 22px;
   }
 }
+
+/* ===============================
+    # Sobre - página
+==================================*/
+.about-hero-section {
+  padding: 70px 0;
+  background-color: #fff;
+}
+
+.about-eyebrow {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.about-title {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--color-text);
+  margin-bottom: 18px;
+}
+
+.about-text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 28px;
+  max-width: 560px;
+}
+
+.about-hero-image-wrap {
+  text-align: center;
+}
+
+.about-hero-image {
+  width: 100%;
+  max-width: 420px;
+}
+
+.about-specialty-section {
+  padding: 70px 0;
+  background-color: var(--color-bg-alt);
+}
+
+.about-specialty-subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  max-width: 640px;
+  margin: 12px auto 0;
+}
+
+.specialty-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px 12px;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(28, 43, 54, 0.06);
+}
+
+.specialty-icon {
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.specialty-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0;
+}
+
+.about-values-section {
+  padding: 70px 0;
+  background-color: #fff;
+}
+
+.value-card {
+  background-color: var(--color-bg-alt);
+  border-radius: 12px;
+  padding: 28px 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.value-icon {
+  font-size: 32px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.value-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.value-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 991px) {
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+}
