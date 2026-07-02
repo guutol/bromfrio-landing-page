@@ -7,7 +7,6 @@ import FinalCTA from "./FinalCTA";
 const specialties = [
   { icon: "🧊", title: "Geladeiras duplex e frost free" },
   { icon: "🧺", title: "Máquinas de lavar" },
-  { icon: "🌀", title: "Lava e seca" },
   { icon: "🍺", title: "Cervejeiras" },
   { icon: "❄️", title: "Câmaras frias" },
   { icon: "🏪", title: "Refrigeração comercial" },

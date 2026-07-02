@@ -1,10 +1,8 @@
 import geladeira from "../images/geladeira.jpg";
 import maquina_lavar from "../images/maquina_lavar.jpg";
 import camara_fria from "../images/camara_fria.jpg";
+import ar_condicionado from "../images/ar_condicionado.jpeg";
 
-// As imagens de "Freezers", "Cervejeiras", "Lava e seca" e "Expositores e
-// freezers comerciais" são placeholders reaproveitados de equipamentos
-// semelhantes até termos fotos próprias desses itens.
 const ServiceData = [
   {
     category: "Refrigeração residencial",
@@ -16,16 +14,10 @@ const ServiceData = [
         link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para geladeira duplex/frost free.",
       },
       {
-        imgsrc: camara_fria,
-        title: "Freezers",
-        text: "Manutenção e conserto de freezers residenciais, com diagnóstico preciso e atendimento rápido.",
-        link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para freezer.",
-      },
-      {
-        imgsrc: geladeira,
-        title: "Cervejeiras",
-        text: "Manutenção de cervejeiras com foco na conservação da temperatura ideal.",
-        link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para cervejeira.",
+        imgsrc: ar_condicionado,
+        title: "Ar-condicionado",
+        text: "Instalação, limpeza e manutenção de ar-condicionado para melhor desempenho e eficiência.",
+        link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para ar-condicionado.",
       },
     ],
   },
@@ -38,12 +30,6 @@ const ServiceData = [
         text: "Manutenção de máquinas de lavar com tampa superior, do diagnóstico ao reparo.",
         link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para máquina de lavar.",
       },
-      {
-        imgsrc: maquina_lavar,
-        title: "Lava e seca",
-        text: "Assistência técnica especializada em lava e seca residencial.",
-        link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para lava e seca.",
-      },
     ],
   },
   {
@@ -54,12 +40,6 @@ const ServiceData = [
         title: "Câmaras frias",
         text: "Manutenção e assistência técnica em câmaras frias para comércios e indústrias.",
         link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para câmara fria.",
-      },
-      {
-        imgsrc: camara_fria,
-        title: "Expositores e freezers comerciais",
-        text: "Manutenção de expositores e freezers comerciais para mercados, restaurantes e bares.",
-        link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para expositor/freezer comercial.",
       },
     ],
   },

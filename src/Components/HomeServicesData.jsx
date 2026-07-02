@@ -1,9 +1,8 @@
 import geladeira from "../images/geladeira.jpg";
 import maquina_lavar from "../images/maquina_lavar.jpg";
 import camara_fria from "../images/camara_fria.jpg";
+import ar_condicionado from "../images/ar_condicionado.jpeg";
 
-// As imagens de "Lava e seca" e "Cervejeiras" são placeholders reaproveitados
-// de outros serviços até termos fotos próprias desses equipamentos.
 const HomeServicesData = [
   {
     imgsrc: geladeira,
@@ -12,22 +11,16 @@ const HomeServicesData = [
     link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para geladeira duplex/frost free.",
   },
   {
+    imgsrc: ar_condicionado,
+    title: "Ar-condicionado",
+    text: "Instalação, limpeza e manutenção de ar-condicionado para melhor desempenho e eficiência.",
+    link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para ar-condicionado.",
+  },
+  {
     imgsrc: maquina_lavar,
     title: "Máquinas de lavar",
     text: "Manutenção de máquinas de lavar com tampa superior, do diagnóstico ao reparo.",
     link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para máquina de lavar.",
-  },
-  {
-    imgsrc: maquina_lavar,
-    title: "Lava e seca",
-    text: "Assistência técnica especializada em lava e seca residencial.",
-    link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para lava e seca.",
-  },
-  {
-    imgsrc: geladeira,
-    title: "Cervejeiras",
-    text: "Manutenção de cervejeiras com foco na conservação da temperatura ideal.",
-    link: "https://wa.me/5518997011035?text=Olá, gostaria de um orçamento para cervejeira.",
   },
   {
     imgsrc: camara_fria,
