@@ -284,7 +284,7 @@ const Contact = () => {
               <h2 className="section-title text-center">Atendimento</h2>
               <div className="row gy-4 mt-2">
                 {serviceHours.map((item, index) => (
-                  <div className="col-md-6 col-lg-4" key={index}>
+                  <div className="col-md-4" key={index}>
                     <div className="hours-card">
                       <span className="hours-icon" aria-hidden="true">
                         {item.icon}

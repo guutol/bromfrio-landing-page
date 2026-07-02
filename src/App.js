@@ -9,11 +9,15 @@ import About from './Components/About'
 import Contact from './Components/Contact'
 import Services from './Components/Services'
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
+import WhatsAppFloat from './Components/WhatsAppFloat'
+import ScrollToTop from './Components/ScrollToTop'
 
 
 const App = () => {
   return (
     <>
+		<ScrollToTop />
 		<Navbar />
 		<Switch>
 			<Route exact path="/" component={Home} />
@@ -22,6 +26,8 @@ const App = () => {
 			<Route exact path="/contact" component={Contact} />
 			<Redirect to="/" />
 		</Switch>
+		<Footer />
+		<WhatsAppFloat />
     </>
   )
 }

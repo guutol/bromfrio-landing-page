@@ -88,7 +88,7 @@ const About = () => {
               </p>
               <div className="row gy-4 mt-2">
                 {specialties.map((item, index) => (
-                  <div className="col-6 col-md-4 col-lg-2" key={index}>
+                  <div className="col-6 col-md-4" key={index}>
                     <div className="specialty-card">
                       <span className="specialty-icon" aria-hidden="true">
                         {item.icon}
